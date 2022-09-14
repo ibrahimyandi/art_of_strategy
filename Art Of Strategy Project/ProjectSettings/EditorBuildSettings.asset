@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 7c5f27408593ac84ab25fbac08b04883
+  - enabled: 1
+    path: Assets/Scenes/ArmyDesign.unity
+    guid: 0c98442275a58514d895af64ec653e34
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer.unity
+    guid: 4880aacd43488e245abfd8b90bae8d8d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: a0eba4ff172f6a74fa1aca3d2cd6cfbf
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerGame.unity
+    guid: 0bfee1906b810254884d86c8d57cd6ae
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 73209562da4a00d48b3828b320b6fee4, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 4cd8cf938c04a334381c00538b88770c, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: a0d0ff4351dfef04799361497adcf265, type: 2}
