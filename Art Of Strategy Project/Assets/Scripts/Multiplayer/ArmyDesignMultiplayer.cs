@@ -9,6 +9,10 @@ using System.Linq;
 public class ArmyDesignMultiplayer : MonoBehaviour
 {
     [SerializeField]
+    GameObject searchGamePanel;
+    [SerializeField]
+    GameObject customMatchPanel;
+    [SerializeField]
     private GameObject errorMessage;
     void Start()
     {
@@ -24,7 +28,16 @@ public class ArmyDesignMultiplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameObject.Find("Toggle_Ready").GetComponent<Toggle>().isOn)
+        {
+            searchGamePanel.SetActive(true);
+            customMatchPanel.SetActive(true);
+        }
+        else
+        {
+            searchGamePanel.SetActive(false);
+            customMatchPanel.SetActive(false);
+        }
     }
     
     public static void ReadyButton()
@@ -115,6 +128,14 @@ public class ArmyDesignMultiplayer : MonoBehaviour
         else
         {
             GameObject.Find("Battle Elephant").transform.Find("Btn_Increase").GetComponent<Button>().interactable = true;
+        }
+        if (money < 75)
+        {
+            GameObject.Find("Toggle_Ready").GetComponent<Toggle>().interactable = true;
+        }
+        else
+        {
+            GameObject.Find("Toggle_Ready").GetComponent<Toggle>().interactable = false;
         }
     }
 

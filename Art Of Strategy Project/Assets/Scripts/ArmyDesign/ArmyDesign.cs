@@ -22,6 +22,7 @@ public class ArmyDesign : MonoBehaviour
     private Button knightCountIncrease;
     [SerializeField]
     private Button battleElephantCountIncrease;
+
     void Start()
     {
         GameObject.Find("Spearman").transform.Find("Text_Price").GetComponent<Text>().text = "75";

@@ -119,7 +119,7 @@ public class AIUnit : MonoBehaviour
 
     public Unit SearchTarget(HexCell positionCell)
     {
-        float distance = 9999999f;
+        float distance = 99999f;
 
         foreach (Unit enemyUnit in teamAUnits)
         {

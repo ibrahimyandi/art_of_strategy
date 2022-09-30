@@ -9,16 +9,28 @@ public class CameraMovement : MonoBehaviour
     private Vector3 dragOrigin;
     float zoomOutmin = 50f;
     float zoomOutMax = 200f;
+    float maxSlide = 200;
+    //zoom = 200
+    //sol alt x = -75 y = 40
+    //sol üst x = -75 y = 100
+    //sağ üst x = 345 y = 100
+    //sağ alt x = 345 y = 40
+
+
+    //zoom = 125
+    //sol alt x = -37.5  y = 20
+    //sol üst x = -37.5 y = 162.5
+    //sağ üst x = 306.5 y = 162.5
+    //sağ alt x = 306.5 y = 20
+
+    //zoom = 50
+    //sol alt x = 0 y = 0
+    //sol üst x = 0 y = 225
+    //sağ üst x = 268 y = 225
+    //sağ alt x = 268 y = 0
     
     float zoomModifierSpeed = 0.1f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         PanCamera();
